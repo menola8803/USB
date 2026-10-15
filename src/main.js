@@ -82,8 +82,15 @@ function nav() {
 }
 
 /** Appens namn i samma stil som Conversation: serif i guld. */
+/** Appens logga: ett runt emblem i guld med USB-symbolen, namnet i Cormorant Garamond med guldglans och en tunn linje med undertext. */
 function wordmark(small) {
-  return `<div class="wordmark${small ? ' sm' : ''}"><span class="wm-name">USB</span></div>`;
+  return `<div class="wordmark${small ? ' sm' : ''}">
+    <span class="wm-seal" aria-hidden="true">${I.usb(small ? 20 : 22)}</span>
+    <span class="wm-text">
+      <span class="wm-name">USB</span>
+      <span class="wm-sub"><i></i>${esc(T().wmSub)}<i></i></span>
+    </span>
+  </div>`;
 }
 
 function langSwitch() {
@@ -107,7 +114,6 @@ function viewLock() {
   return `
   <header class="masthead">
     <div class="mast-row">${wordmark()}<button class="icon-btn glass" data-go="settings" aria-label="${esc(t.settings)}">${I.gear}</button></div>
-    <p class="mast-tag">${esc(t.tagline)}</p>
   </header>
   ${S.error ? `<div class="err">${esc(S.error)}</div>` : ''}
   ${S.notice ? `<div class="note">${esc(S.notice)}</div>` : ''}
@@ -149,7 +155,6 @@ function viewLock() {
   </section>
   <div class="controls"><button class="primary" data-act="lock" ${notOwner ? 'disabled' : ''}>${I.lock(20)} ${esc(t.lockBtn)}</button></div>
   <p class="hint">${esc(t.durationHint)}</p>`}
-  ${versionTag()}
   ${nav()}`;
 }
 

@@ -3,6 +3,7 @@ export const STR = {
   sv: {
     locale: 'sv-SE',
     tagline: 'Stänger av USB-dataöverföring med PIN-kod. Timern öppnar porten igen automatiskt – och laddningen fungerar hela tiden.',
+    wmSub: 'Portlås',
     settings: 'Inställningar',
     back: 'Tillbaka',
     navLock: 'Lås',
@@ -98,6 +99,7 @@ export const STR = {
   en: {
     locale: 'en-GB',
     tagline: 'Turns off USB data transfer with a PIN. The timer reopens the port automatically – and charging always works.',
+    wmSub: 'Port lock',
     settings: 'Settings',
     back: 'Back',
     navLock: 'Lock',

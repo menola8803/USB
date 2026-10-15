@@ -2,6 +2,12 @@
 
 Varje version beskrivs här och under **Releases** på GitHub. Nya versioner läggs till automatiskt när de byggs. Varje rättelse skrivs ut som en egen punkt som börjar med "Rättat:".
 
+## Kommande version
+
+- Nytt, elegantare namn: ett runt emblem i guld med USB-symbolen, namnet USB i Cormorant Garamond med luft mellan bokstäverna och en guldglans som sveper över när appen öppnas, och en tunn guldlinje med undertexten PORTLÅS.
+- Kompaktare meny längst ner: ikon och text står bredvid varandra i en låg list, och den valda fliken markeras med guld.
+- Rättat: man behövde skrolla på startskärmen. Nu ryms allt på en skärm, även på mindre telefoner. Toppen är lägre, beskrivningen av appen och versionsnumret visas bara under Om, och ringen och knapparna är något mindre. På låga skärmar ligger snabbvalen för tid på en rad.
+
 ## Version 1.0.2 – 2026-10-15
 
 - Ändrat: den arabiska texten (قفل) under namnet USB är borttagen, både på startskärmen och på Om-sidan. Det arabiska typsnittet är också borttaget, så appen blir lite mindre.

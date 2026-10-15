@@ -318,3 +318,78 @@ mark { background: var(--hl); color: var(--text); border-radius: 4px; padding: 1
   #app.v-lock .mic { width: 68px; height: 68px; }
   #app.v-lock .hero > p { display: none; }
 }
+
+/* ===== Version 1.0.3: elegantare namn och kompaktare meny ===== */
+
+/* Loggan: emblem + namn i guld med glans + tunn linje med undertext */
+.wordmark { flex-direction: row; align-items: center; gap: 14px; line-height: 1; }
+.wm-seal {
+  width: 48px; height: 48px; flex-shrink: 0; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; color: var(--gold-l);
+  background: radial-gradient(circle at 35% 30%, #24413F 0%, #142427 70%);
+  border: 1px solid rgba(232, 176, 74, .65);
+  box-shadow: inset 0 0 0 3px #142427, inset 0 0 0 4px rgba(232, 176, 74, .35), 0 4px 18px rgba(232, 176, 74, .18);
+}
+.wm-text { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; }
+.wm-name {
+  font-family: var(--serif); font-weight: 600; font-size: 42px; line-height: .9;
+  letter-spacing: .2em; margin-right: -.2em; padding: 0;
+  background: linear-gradient(105deg, #B9822A 0%, #F7DA94 28%, #E8B04A 48%, #FCEBC0 62%, #D59A35 80%, #B9822A 100%);
+  background-size: 220% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(232, 176, 74, .22));
+  animation: shine 2.8s ease-out .2s 1 both;
+}
+@keyframes shine { from { background-position: 100% 0; } to { background-position: 0% 0; } }
+.wm-sub { display: flex; align-items: center; gap: 8px; font-family: var(--body); font-size: 10px; font-weight: 600; letter-spacing: .38em; margin-right: -.38em; text-transform: uppercase; color: var(--teal-l); }
+.wm-sub i { display: block; width: 14px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
+.wm-sub i:last-child { background: linear-gradient(90deg, var(--gold), transparent); }
+.wordmark.sm .wm-seal { width: 42px; height: 42px; }
+.wordmark.sm .wm-name { font-size: 34px; }
+@media (prefers-reduced-motion: reduce) { .wm-name { animation: none; background-position: 0 0; } }
+
+/* Lägre topp på startskärmen */
+#app.v-lock .masthead { padding-bottom: 16px; padding-top: calc(env(safe-area-inset-top) + 16px); }
+#app.v-lock .mast-row { align-items: center; }
+
+/* Kompakt meny: en låg list med ikon och text bredvid varandra */
+.nav { gap: 6px; padding: 6px; margin-top: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--card); justify-content: stretch; bottom: calc(env(safe-area-inset-bottom) + 6px); }
+.nav button { flex: 1 1 0; min-width: 0; min-height: 44px; flex-direction: row; justify-content: center; gap: 6px; font-size: 13px; border-radius: 13px; padding: 0 6px; }
+.nav button svg { width: 18px; height: 18px; flex-shrink: 0; }
+.nav button.on { background: color-mix(in srgb, var(--gold) 16%, transparent); color: var(--gold-l); }
+#app { padding-bottom: calc(env(safe-area-inset-bottom) + 10px); }
+
+/* Startskärmen ryms på en skärm: ingen skrollning */
+#app.v-lock { height: 100vh; height: 100dvh; min-height: 0; overflow-y: auto; gap: 10px; }
+#app.v-lock > * { flex-shrink: 0; }
+#app.v-lock .hero { flex: 1 0 auto; justify-content: center; gap: 10px; padding: 4px 0 0; }
+#app.v-lock .ring1:not(.ring-lock) { width: 140px; height: 140px; }
+#app.v-lock .ring1:not(.ring-lock) .ring2 { width: 104px; height: 104px; }
+#app.v-lock .mic { width: 76px; height: 76px; }
+#app.v-lock .ring-lock { width: 172px; height: 172px; }
+#app.v-lock .ring2.closed { width: 134px; height: 134px; }
+#app.v-lock .cd span { font-size: 27px; }
+#app.v-lock .hero > p { margin: 0; font-size: 13px; }
+#app.v-lock .card { padding: 14px; gap: 10px; }
+#app.v-lock .stepper { padding: 0; }
+#app.v-lock .stepper .icon-btn.lg { width: 48px; height: 48px; }
+#app.v-lock .dur { font-size: 30px; }
+#app.v-lock .presets button { min-height: 40px; }
+#app.v-lock .controls .primary, #app.v-lock .secondary.wide { min-height: 56px; }
+#app.v-lock .hint { margin: -2px 0 0; }
+#app.v-lock .nav { position: sticky; }
+@media (max-height: 780px) {
+  #app.v-lock .hint { display: none; }
+  #app.v-lock .ring1:not(.ring-lock) { width: 116px; height: 116px; }
+  #app.v-lock .ring1:not(.ring-lock) .ring2 { width: 88px; height: 88px; }
+  #app.v-lock .mic { width: 64px; height: 64px; }
+  #app.v-lock .ring-lock { width: 148px; height: 148px; }
+  #app.v-lock .ring2.closed { width: 114px; height: 114px; }
+  #app.v-lock .cd span { font-size: 23px; }
+  #app.v-lock .presets { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+  #app.v-lock .presets button { font-size: 12px; padding: 0 2px; }
+  #app.v-lock .wm-name { font-size: 36px; }
+}
+@media (max-height: 680px) {
+  #app.v-lock .hero > p, #app.v-lock .charge { display: none; }
+}
