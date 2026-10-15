@@ -1,7 +1,6 @@
 import { UsbLock, isNative } from './usb.js';
 import { STR } from './i18n.js';
 // Samma typsnitt som Conversation. De ingår i appen så att de fungerar utan internet.
-import '@fontsource/amiri/arabic-400.css';
 import '@fontsource/cormorant-garamond/latin-600.css';
 import '@fontsource/cormorant-garamond/latin-700.css';
 import '@fontsource/space-grotesk/latin-500.css';
@@ -82,9 +81,9 @@ function nav() {
   return `<nav class="nav">${b('lock', I.lock(22), t.navLock)}${b('log', I.hist, t.navLog)}${b('about', I.info, t.navAbout)}</nav>`;
 }
 
-/** Appens namn i samma stil som Conversation: serif i guld, med det arabiska ordet för lås (qufl) under. */
+/** Appens namn i samma stil som Conversation: serif i guld. */
 function wordmark(small) {
-  return `<div class="wordmark${small ? ' sm' : ''}"><span class="wm-name">USB</span><span class="wm-ar" lang="ar" dir="rtl">قفل</span></div>`;
+  return `<div class="wordmark${small ? ' sm' : ''}"><span class="wm-name">USB</span></div>`;
 }
 
 function langSwitch() {
