@@ -2,7 +2,7 @@
 
 Varje version beskrivs här och under **Releases** på GitHub. Nya versioner läggs till automatiskt när de byggs. Varje rättelse skrivs ut som en egen punkt som börjar med "Rättat:".
 
-## Kommande version
+## Version 1.0.3 – 2026-10-15
 
 - Nytt, elegantare namn: ett runt emblem i guld med USB-symbolen, namnet USB i Cormorant Garamond med luft mellan bokstäverna och en guldglans som sveper över när appen öppnas, och en tunn guldlinje med undertexten PORTLÅS.
 - Kompaktare meny längst ner: ikon och text står bredvid varandra i en låg list, och den valda fliken markeras med guld.
