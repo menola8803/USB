@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- USB-symbolen i guld (#E8B04A) med ett litet lås, på appens mörkgröna bakgrund. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Pil överst -->
+    <path android:fillColor="#E8B04A" android:pathData="M54,28 l6,9 h-12 z"/>
+    <!-- Stam -->
+    <path android:strokeColor="#E8B04A" android:strokeWidth="3.5" android:strokeLineCap="round"
+        android:pathData="M54,36 V72"/>
+    <!-- Vänster gren med cirkel -->
+    <path android:strokeColor="#E8B04A" android:strokeWidth="3.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:fillColor="#00000000" android:pathData="M54,62 L42,54 V47"/>
+    <path android:fillColor="#E8B04A" android:pathData="M38,44 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 z"/>
+    <!-- Höger gren med fyrkant -->
+    <path android:strokeColor="#E8B04A" android:strokeWidth="3.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:fillColor="#00000000" android:pathData="M54,56 L66,49 V44"/>
+    <path android:fillColor="#E8B04A" android:pathData="M62.5,37.5 h7 v7 h-7 z"/>
+    <!-- Bas -->
+    <path android:fillColor="#E8B04A" android:pathData="M48,76 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 z"/>
+    <!-- Lås nere till höger (turkos) -->
+    <path android:strokeColor="#5FC4B4" android:strokeWidth="2.5" android:fillColor="#00000000"
+        android:pathData="M68,70 v-3 a4,4 0 0 1 8,0 v3"/>
+    <path android:fillColor="#5FC4B4" android:pathData="M65.5,69.5 h13 a1.5,1.5 0 0 1 1.5,1.5 v8 a1.5,1.5 0 0 1 -1.5,1.5 h-13 a1.5,1.5 0 0 1 -1.5,-1.5 v-8 a1.5,1.5 0 0 1 1.5,-1.5 z"/>
+</vector>

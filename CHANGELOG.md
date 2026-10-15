@@ -1,0 +1,20 @@
+# Ändringar
+
+Varje version beskrivs här och under **Releases** på GitHub. Nya versioner läggs till automatiskt när de byggs. Varje rättelse skrivs ut som en egen punkt som börjar med "Rättat:".
+
+## Kommande version
+
+Första versionen av USB.
+
+- Stäng av USB med PIN-kod. Välj hur länge USB ska vara avstängd med − och + (15 minuter i taget) eller snabbval: 30 min, 1 h, 2 h, 3 h, 6 h och 12 h. Förvalt är 3 timmar.
+- Timern öppnar USB-porten automatiskt när tiden är ute, även om appen är stängd. Startas telefonen om under tiden öppnas USB direkt om tiden har gått ut, annars fortsätter timern.
+- Laddning fungerar hela tiden. Bara dataöverföringen stängs av.
+- Med Android 12 eller senare, på telefoner som stöder det, stängs all USB-data av. Annars spärras filöverföring, USB-minnen och USB-felsökning (adb).
+- Nedräkning i en ring på startskärmen och i en notis, med klockslaget när USB öppnas.
+- Öppna USB i förtid med PIN-koden. Efter 5 fel PIN-koder i rad måste man vänta, först 30 sekunder och sedan längre för varje nytt fel.
+- PIN-koden (4–8 siffror) väljs första gången appen öppnas och kan bytas under Inställningar. Den sparas krypterad (hash) i telefonen.
+- Logg över när USB stängts av och öppnats, och hur (timer eller PIN-kod).
+- Inställningar: språk (svenska/engelska), förvald tid, byt PIN-kod, status för telefonen, steg för att aktivera USB-låset och knapp för att ta bort administratörsrätten innan appen avinstalleras.
+- Samma design som Conversation: mörkgrön bakgrund, guld och turkos, namnet i Cormorant Garamond med arabiska ordet för lås (قفل) under, stjärnmönster i toppen, samma meny och Om-sida med "Utvecklare – Claes Sundman från SNC AB".
+- APK-filen heter usb-versionsnummer.apk, t.ex. usb-1.0.1.apk.
+- Rättat (under utvecklingen): knappen **Stäng av USB** doldes bakom menyn längst ner. Den ligger nu ovanför menyn och ringen är mindre, så att allt syns utan att skrolla.

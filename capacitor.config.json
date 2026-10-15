@@ -1,0 +1,9 @@
+{
+  "appId": "se.menola.usb",
+  "appName": "USB",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#0F1A1C",
+    "adjustMarginsForEdgeToEdge": "force"
+  }
+}

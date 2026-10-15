@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">USB</string>
+    <string name="title_activity_main">USB</string>
+    <string name="package_name">se.menola.usb</string>
+    <string name="custom_url_scheme">se.menola.usb</string>
+    <string name="admin_label">USB-lås</string>
+    <string name="admin_desc">Låter appen stänga av och öppna USB-dataöverföring. Laddning fungerar alltid.</string>
+</resources>
