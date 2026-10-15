@@ -2,7 +2,7 @@
 
 Varje version beskrivs här och under **Releases** på GitHub. Nya versioner läggs till automatiskt när de byggs. Varje rättelse skrivs ut som en egen punkt som börjar med "Rättat:".
 
-## Kommande version
+## Version 1.0.2 – 2026-10-15
 
 - Ändrat: den arabiska texten (قفل) under namnet USB är borttagen, både på startskärmen och på Om-sidan. Det arabiska typsnittet är också borttaget, så appen blir lite mindre.
 
